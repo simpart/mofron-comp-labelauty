@@ -73,11 +73,6 @@ module.exports = class extends Radio {
             this.style(this.m_style_buf);
             this.styleDom().getRawDom().childNodes[1].style['padding'] = this.padding();
 
-            for (let lbl_idx in this.styleDom().getRawDom().childNodes) {
-                if (1 < parseInt(lbl_idx)) {
-                    this.styleDom().getRawDom().childNodes[lbl_idx].style['display'] = 'none';
-                }
-            }
 	} catch (e) {
             console.error(e.stack);
             throw e;
